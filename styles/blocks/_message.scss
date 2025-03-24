@@ -1,0 +1,54 @@
+.message {
+  display: flex;
+  gap: 10px;
+
+  &__message {
+    display: inline-flex;
+    flex-direction: column;
+    background-color: $lime-green;
+    border-radius: 5px;
+    padding: 3px 6px;
+  }
+
+  &__text {
+    font-size: 0.75rem;
+  }
+
+  &__info {
+    align-self: end;
+    display: flex;
+    gap: 3px;
+  }
+
+  &__time {
+    font-size: 10px;
+  }
+
+  &__status {
+  }
+
+  &__avatar {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+      object-fit: cover;
+      max-width: 100%;
+    }
+  }
+
+  &--customer {
+    align-self: end;
+  }
+
+  &--admin {
+    align-self: start;
+
+    .message__message {
+      background-color: $white;
+      color: $gray-blue;
+    }
+  }
+}

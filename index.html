@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>SMART-UI</title>
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="./favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <div class="header__inner">
+            <button type="button" class="menu__icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+
+            <a href="#home" class="header__logo">
+              <img src="./images/logo.svg" alt="SMART-UI" />
+            </a>
+
+            <div
+              class="header__menu menu"
+              data-da=".header__container,768,last"
+            >
+              <nav class="menu__body">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a href="#home" class="menu__link menu__link--active">
+                      Home
+                    </a>
+                  </li>
+
+                  <li class="menu__item">
+                    <a href="#our-team" class="menu__link">Our team</a>
+                  </li>
+
+                  <li class="menu__item">
+                    <a href="#portfolio" class="menu__link">Portfolio</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="header__interactive" data-da=".menu,768,last">
+            <div class="header__languages">
+              <button class="header__lang">UA</button>
+
+              <button class="header__lang header__lang--active">EN</button>
+            </div>
+
+            <div class="header__socials">
+              <a href="#whatsapp" class="header__social">
+                <img src="./images/social-whatsapp.svg" alt="WhatsAap" />
+              </a>
+
+              <a href="#telergam" class="header__social">
+                <img src="./images/social-telergam.svg" alt="Telegram" />
+              </a>
+            </div>
+
+            <div class="header__content-image">
+              <img src="./images/hero/monitor.png" alt="Monitor" />
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="page">
+        <section class="page__hero hero">
+          <div class="hero__container">
+            <div class="hero__row">
+              <div class="hero__content">
+                <h1 class="hero__title">We are SMART-UI<span>.</span></h1>
+
+                <p class="hero__subtitle">
+                  You deserve easy IT, to make it easy make it SMART
+                  <img
+                    src="./images/hero/hello.svg"
+                    class="hand no-select"
+                    alt="Hi!"
+                  />
+                </p>
+
+                <div class="hero__btns">
+                  <a href="#get-started" class="hero__btn button"
+                    >Get Started</a
+                  >
+
+                  <div class="hero__socials">
+                    <a href="#get-started" class="hero__social">
+                      <img src="./images/clutch.svg" alt="Clutch" />
+                    </a>
+
+                    <a href="#get-started" class="hero__social">
+                      <img src="./images/upwork.svg" alt="Upwork" />
+                    </a>
+
+                    <a href="#get-started" class="hero__social">
+                      <img src="./images/linkedin.svg" alt="LinkedIn" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hero__image">
+                <img
+                  src="./images/main_1.png"
+                  class="hero__main hero__main--1 _anim-items trans-anim"
+                  alt="Content Image"
+                />
+                <img
+                  src="./images/main_2.png"
+                  class="hero__main hero__main--2 _anim-items scale-anim"
+                  alt="Content Image"
+                />
+                <img
+                  src="./images/main_3.png"
+                  class="hero__main hero__main--3 _anim-items rotate-anim hide-on-tablet"
+                  alt="Content Image"
+                />
+              </div>
+            </div>
+
+            <div class="hero__interactive">
+              <button class="hero__scroll">
+                <img src="./images/hero/scroll.svg" alt="Scroll" /> Scroll to
+                explore
+              </button>
+            </div>
+
+            <div class="hero__decors decors">
+              <div
+                class="decors__decor decors__decor--1"
+                data-prlx-mouse
+                data-prlx-a="100"
+                data-prlx-cx="200"
+                data-prlx-cy="300"
+              ></div>
+              <div
+                class="decors__decor decors__decor--2"
+                data-prlx-mouse
+                data-prlx-a="100"
+                data-prlx-cx="30"
+                data-prlx-cy="30"
+                data-prlx-dxr
+                data-prlx-dyr
+              ></div>
+              <div
+                class="decors__decor decors__decor--3"
+                data-prlx-mouse
+                data-prlx-a="100"
+                data-prlx-cx="30"
+                data-prlx-cy="30"
+              ></div>
+              <div class="decors__decor decors__decor--4"></div>
+            </div>
+          </div>
+
+          <button class="hero__return">return message</button>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__container"></div>
+      </footer>
+    </div>
+
+    <div class="messanger">
+      <div class="messanger__chat chat chat--close">
+        <button class="chat__close">
+          <img src="./images/chat/close.svg" alt="Close" />
+        </button>
+
+        <div class="chat__header">
+          <div class="chat__title">Chat</div>
+          <div class="chat__time-info">last seen 45 minutes ago</div>
+        </div>
+
+        <div class="chat__messages">
+          <div class="chat__message message message--admin">
+            <div class="message__avatar">
+              <img src="./images/chat/avatar.jpg" alt="Avatar" />
+            </div>
+
+            <div class="message__message">
+              <p class="message__text">Can I help you?</p>
+
+              <div class="message__info">
+                <div class="message__time">11:31 AM</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="chat__message message message--customer">
+            <div class="message__message">
+              <p class="message__text">Anyone on for lunch today</p>
+
+              <div class="message__info">
+                <div class="message__time">11:31 AM</div>
+                <img
+                  src="./images/chat/read.svg"
+                  alt="Read"
+                  class="message__status"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="chat__form">
+          <div class="chat__field">
+            <button class="chat__slime">
+              <img src="./images/chat/smile.svg" alt="Smile" />
+            </button>
+
+            <input
+              class="chat__input"
+              type="text"
+              placeholder="Start typing..."
+            />
+
+            <button type="submit" class="chat__send">
+              <img src="./images/chat/send.svg" alt="Smile" />
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <button class="messanger__btn">
+        <img src="./images/message.svg" alt="Contact us" />
+      </button>
+    </div>
+
+    <script src="./scripts/main.js" type="module"></script>
+  </body>
+</html>

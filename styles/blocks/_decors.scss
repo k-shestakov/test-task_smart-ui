@@ -1,0 +1,107 @@
+.decors {
+  &__decor {
+    background-color: $yellow;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+  }
+
+  &__decor--1 {
+    width: 25rem;
+    height: 25rem;
+    top: -25%;
+    left: -11%;
+
+    @media (max-width: 1600px) {
+      width: 18.75rem;
+      height: 18.75rem;
+    }
+
+    @media (max-width: 1000px) {
+      top: -25%;
+      left: -26%;
+    }
+
+    @media (max-width: 700px) {
+      top: -30%;
+      left: -30%;
+    }
+
+    @media (max-width: 500px) {
+      display: none;
+    }
+  }
+
+  &__decor--2 {
+    width: 5.8125rem;
+    height: 5.8125rem;
+    top: 27%;
+    left: inherit;
+
+    @media (max-width: 1600px) {
+      width: 4.375rem;
+      height: 4.375rem;
+    }
+
+    @media (max-width: 700px) {
+      top: 15%;
+    }
+
+    @media (max-width: 500px) {
+      display: none;
+    }
+  }
+
+  &__decor--3 {
+    width: 8.125rem;
+    height: 8.125rem;
+    top: 32%;
+    left: 60%;
+
+    @media (max-width: 1600px) {
+      width: 6.25rem;
+      height: 6.25rem;
+    }
+
+    @media (max-width: 700px) {
+      top: 50%;
+      left: 40%;
+    }
+
+    @media (max-width: 500px) {
+      display: none;
+    }
+  }
+
+  &__decor--4 {
+    width: 58.125rem;
+    height: 58.125rem;
+    background-color: $blue;
+    top: 0;
+    right: 0;
+    transform: translateX(50%);
+
+    @media (max-width: 1600px) {
+      width: 43.75rem;
+      height: 43.75rem;
+    }
+
+    @media (max-width: 1400px) {
+      transform: translateX(70%);
+    }
+
+    @media (max-width: 1000px) {
+      transform: translateX(80%);
+    }
+
+    @include on-tablet {
+      width: 58.125rem;
+      height: 58.125rem;
+      transform: translateX(85%);
+    }
+
+    @media (max-width: 500px) {
+      transform: translateX(95%);
+    }
+  }
+}

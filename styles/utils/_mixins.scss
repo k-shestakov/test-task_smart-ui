@@ -1,0 +1,41 @@
+@mixin on-mobile {
+  @media (max-width: $modile) {
+    @content;
+  }
+}
+
+@mixin on-tablet {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin on-laptop {
+  @media (max-width: $laptop) {
+    @content;
+  }
+}
+
+@mixin button {
+  color: $white;
+  background-color: $lime;
+  padding: 29px 46px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+
+  &:hover {
+    background-color: rgb(18, 179, 18);
+  }
+
+  &:active {
+    color: $white;
+  }
+
+  &:visited {
+    color: $white;
+  }
+}

@@ -1,0 +1,92 @@
+@import "fonts";
+@import "utils";
+
+@import "./blocks/header";
+@import "./blocks/menu";
+@import "./blocks/page";
+@import "./blocks/hero";
+@import "./blocks/decors";
+@import "./blocks/messanger";
+@import "./blocks/chat";
+@import "./blocks/message";
+@import "./blocks/footer";
+
+html {
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: $gray-blue;
+  background-color: $white;
+  line-height: 150%;
+}
+
+.wrapper {
+  overflow: clip;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+[class*="__container"] {
+  max-width: 1355px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.page {
+  flex: 1 1 auto;
+}
+
+.no-select {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.button {
+  @include button;
+}
+
+.scale-anim {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0);
+  transition: all 0.4s ease 1s;
+}
+
+.scale-anim._limn {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+.trans-anim {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(5%);
+  transition: all 0.4s ease 0.2s;
+}
+
+.trans-anim._limn {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.rotate-anim {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0);
+  transition: all 0.4s ease 1.8s;
+}
+
+.rotate-anim._limn {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}

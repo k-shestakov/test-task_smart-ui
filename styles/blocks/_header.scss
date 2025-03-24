@@ -1,0 +1,227 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  // background-color: $white;
+
+  &__container {
+    min-height: 160px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    @include on-laptop {
+      min-height: 135px;
+    }
+
+    @media (max-width: 980px) {
+      justify-content: space-between;
+    }
+
+    @media (max-width: 850px) {
+      min-height: 123px;
+    }
+
+    @media (max-width: 850px) {
+      min-height: 90px;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    align-content: center;
+    gap: 50px;
+    flex: 0 0 52.8%;
+
+    @include on-laptop {
+      gap: 38px;
+    }
+
+    @media (max-width: 980px) {
+      flex: 1 1 auto;
+    }
+
+    @media (max-width: 850px) {
+      gap: 25px;
+    }
+
+    @include on-tablet {
+      justify-content: center;
+      position: relative;
+      z-index: 10;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    overflow: hidden;
+    width: 178px;
+    height: 33px;
+    flex: 0 0 178px;
+
+    @include on-laptop {
+      width: 135px;
+      height: 24px;
+      flex: 0 0 135px;
+    }
+
+    @include on-tablet {
+      width: 130px;
+      height: 24px;
+      flex: 0 0 130px;
+    }
+  }
+
+  &__interactive {
+    flex: 1 1 47.2%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 40px;
+
+    @include on-laptop {
+      gap: 32px;
+    }
+
+    @media (max-width: 980px) {
+      flex: none;
+    }
+
+    @include on-tablet {
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+    }
+  }
+
+  &__content-image {
+    display: none;
+
+    @include on-tablet {
+      display: block;
+      margin-top: 25px;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
+  &__languages {
+    display: flex;
+    align-items: center;
+  }
+
+  &__lang {
+    font-size: 1.125rem;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+    color: $gray;
+
+    &:not(:last-child) {
+      padding-right: 15px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+        right: 0;
+        width: 1px;
+        height: 13px;
+        background-color: $gray;
+
+        @include on-tablet {
+          width: 2px;
+          height: 40px;
+        }
+
+        @include on-mobile {
+          height: 25px;
+          width: 1px;
+        }
+      }
+
+      @include on-laptop {
+        padding-right: 10px;
+      }
+
+      @include on-tablet {
+        padding-right: 13px;
+      }
+    }
+
+    &:not(:first-child) {
+      padding-left: 15px;
+
+      @include on-laptop {
+        padding-left: 10px;
+      }
+
+      @include on-tablet {
+        padding-left: 13px;
+      }
+    }
+
+    &:hover {
+      color: $gray-blue;
+    }
+
+    &--active {
+      color: $lime;
+
+      &:hover {
+        color: $lime;
+      }
+    }
+
+    @include on-laptop {
+      font-size: 0.875rem;
+    }
+
+    @include on-tablet {
+      font-size: 3.125rem;
+    }
+
+    @include on-mobile {
+      font-size: 1.875rem;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+
+  &__social {
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-3px);
+    }
+
+    & img {
+      width: 33px;
+      height: 33px;
+
+      @include on-laptop {
+        width: 26px;
+        height: 26px;
+      }
+
+      @include on-tablet {
+        width: 46px;
+        height: 46px;
+      }
+
+      @include on-mobile {
+        width: 33px;
+        height: 33px;
+      }
+    }
+  }
+}
